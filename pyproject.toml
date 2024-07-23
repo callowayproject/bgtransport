@@ -42,6 +42,7 @@ test = [
     "coverage",
     "pre-commit",
     "pytest-cov",
+    "pytest-mock",
     "pytest",
 ]
 docs = [
@@ -180,8 +181,6 @@ order-by-type = true
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
-add-ignore = ["D107", "D200", "D212"]
-match = "(?!test_).*\\.py"
 
 [tool.bumpversion]
 current_version = "0.1.0"
